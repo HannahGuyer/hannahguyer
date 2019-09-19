@@ -1,0 +1,151 @@
+/*Green*/
+.green {
+    background: #18f547;
+    background: linear-gradient(11deg, #18f547, 20%, #76ff08 62%, #08ffd3 100%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relax {
+	font-size: 30px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #656565;
+	padding: 15px;
+	background-color: gray;
+	border-left: 6px lightgray solid;
+	border-top: 6px lightgray solid;
+	border-bottom: 6px lightgray solid;
+	justify-content: center;
+}
+
+
+/*Smiley*/
+.box {
+	width: 100vw;
+	height:100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family:arial;
+	color: pink;
+	background-image: radial-gradient(#e66465, #9198e5);
+	animation: blur 1s infinite linear alternate;
+}
+
+
+@keyframes bgc {
+	0% {
+		background-color: red;
+		border-radius:50%;
+	}
+
+	100% {
+		background-color: lime;
+	}
+
+}
+
+@keyframes blur {
+	0% {
+		filter:blur(0px);
+	}
+	
+	100% {
+		filter:blur(100px);
+	}
+}
+
+.smiley {
+	font-size: 10vw;
+	color:yellow;
+}
+
+
+/*sirens*/
+.hemisphere {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background-color: black;
+}
+
+.hemisphere-circle {
+	width: 100%;
+	height: 100% 1;
+	background-color: black;
+}
+
+.hemisphere-circle img {
+	width: 25vw;
+	height: 25vh;
+	animation: rotate 2s linear infinite ;
+}
+
+@keyframes rotate {
+  0% {transform: rotate(0deg); }
+  
+  100% { transform: rotate(360deg); }
+}
+
+
+/*Satellite*/
+.sat {
+	font-size: 5vw;
+	text-align: center;
+	background-color: yellow;
+}
+
+.sat-1.active {
+	color:red;
+}
+
+.sat-2.active {
+	color:blue;
+}
+
+.sat-3.active {
+	color:lime;
+}
+
+.image-container {
+  height:100vh;
+  width:100vw;
+  align-items:center;
+  justify-content: center;
+  position: fixed;
+  top:0px;
+  left:0px;
+  display: none;
+  flex-wrap: wrap;
+}
+
+.rooftop-container.active {
+	display: flex;
+}
+
+.rooftop {
+	height:80vh;
+}
+
+.rooftop img {
+	height: 100%;
+	width:auto;
+}
+
+/*Rose Grid*/
+.rose-pattern {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: brown;
+}
+
+.rose-image {
+	width: 20vw;
+	height: 20vw;
+}
+
+
