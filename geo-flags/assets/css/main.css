@@ -1,14 +1,16 @@
-/*
+
 body {
 	font-family: Helvetica,Arial,sans-serif;
 	font-size: 32px;
 	background-color: black;
 	color:white;
-}*/
+}
+
+a {text-decoration: none;
+}
 
 /*	Index Homepage 	*/
 
-a {text-decoration: none;}
 
 .index-container {
 	width: 100vw;
@@ -18,9 +20,9 @@ a {text-decoration: none;}
 }
 
 .index-intro {
-	font-size:38px;
+	font-size:28px;
 	margin-bottom:25vh; 
-	padding: 10px;
+	padding: 20px;
 	text-align: center;
 	text-decoration: underline;
 	font-family: helvetica;
@@ -36,20 +38,21 @@ a {text-decoration: none;}
 	border-top: 2px solid white;
 	color:white;
 	font-family: helvetica;
-
 }
 
 .index-name {
-	flex: 0 0 50%;
+	flex: 0 0 33.33%;
 }
 
 .index-layer {
-	flex: 0 0 25%;
+	flex: 0 0 33.33%;
 }
 
 .index-tag {
-	flex: 0 0 25%;
+	flex: 0 0 33.33%;
 }
+
+
 
 /*Green*/
 .green {
