@@ -1,0 +1,151 @@
+
+a. {
+	color: red;
+}
+
+body {
+	font-family: helvetica,arial,sans-serif;
+	font-size:18px;
+	background-color: black;
+	color:white;
+}
+
+h2 {
+	font-size: 22px;
+	font-style: italic;
+	text-align: center;
+	color: red;
+	margin-left:60px;
+}
+.nav {
+	width: 100%;
+	background-color: black;
+	padding: 10px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+}
+
+
+.nav-item {
+	background-color: lime;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 1px;
+	color: #000;
+	text-decoration: none;
+	cursor: crosshair;
+}
+
+
+.nav-item:hover {
+	background-color: lightgreen;
+	transition: 0.25s;
+}
+
+.nav-header {
+	display: inline;
+	color: gray;
+	padding:5px;
+}
+
+.title {
+	margin-left: -10px;
+	width: 100%;
+}
+
+
+.title img {
+	width: 102%;
+}
+
+
+.research {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+.research-item {
+	flex: 0 0 32.333%;
+	padding: px;
+	transition: 1s;
+	cursor: crosshair;
+}
+
+
+.research-item img {
+	width: 100%;
+}
+
+
+.research-item span {
+	color: lime;
+	font-size: 18px;
+	background-color:black;
+
+}
+
+.essay {
+	margin-top: 5px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.text {
+	flex: 0 0 66.66%;
+	padding: 10px;
+	margin-left: 18px;
+}
+
+.text h1 {
+	font-size: 60px;
+	margin-left: 20px;
+	text-align: center;
+	font-style: italic;
+}
+
+.text h2 {
+	font-size: 20px;
+	background-color: red;
+	padding: 3px;
+}
+
+.text p {
+	margin-bottom: 10px;
+}
+
+.figure {
+	flex: 0 0 33.333%;
+	padding: 10px;
+
+}
+
+.figure img {
+	width: 100%;
+}
+
+.figure span {
+	font-size: 18px;
+	color: gray;
+}
+
+/*interactive class*/
+
+.hide {
+	display:none;
+}
+
+.show {
+	display: block;
+}
+
+.large {
+	flex: 0 0 66.66%;
+	transition: 1s;
+	cursor: zoom-out;
+}
+
+.active {
+	background-color: blue;
+}

@@ -1,0 +1,457 @@
+
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+	background-color: black;
+	color:white;
+}
+
+a {text-decoration: none;
+}
+
+/*	Index Homepage 	*/
+
+
+.index-container {
+	width: 100vw;
+	height: 100vh;
+	background: black;
+	font-size: 32px;
+}
+
+.index-intro {
+	font-size:28px;
+	margin-bottom:25vh; 
+	padding: 20px;
+	text-align: center;
+	text-decoration: underline;
+	font-family: helvetica;
+	color:white;
+}
+
+.index-row {
+	display: flex;
+	flex-wrap: wrap;
+	padding:10px;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border-top: 2px solid white;
+	color:white;
+	font-family: helvetica;
+}
+
+.index-name {
+	flex: 0 0 33.33%;
+}
+
+.index-layer {
+	flex: 0 0 33.33%;
+}
+
+.index-tag {
+	flex: 0 0 33.33%;
+}
+
+
+
+/*Green*/
+.green {
+    background: #18f547;
+    background: linear-gradient(11deg, #18f547, 20%, #76ff08 62%, #08ffd3 100%);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relax {
+	font-size: 30px;
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #656565;
+	padding: 15px;
+	background-color: gray;
+	border-left: 6px lightgray solid;
+	border-top: 6px lightgray solid;
+	border-bottom: 6px lightgray solid;
+	justify-content: center;
+}
+
+
+/*Smiley*/
+.box {
+	width: 100vw;
+	height:100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-family:arial;
+	color: pink;
+	background-image: radial-gradient(#e66465, #9198e5);
+	animation: blur 1s infinite linear alternate;
+}
+
+
+@keyframes bgc {
+	0% {
+		background-color: red;
+		border-radius:50%;
+	}
+
+	100% {
+		background-color: lime;
+	}
+
+}
+
+@keyframes blur {
+	0% {
+		filter:blur(0px);
+	}
+	
+	100% {
+		filter:blur(100px);
+	}
+}
+
+.smiley {
+	font-size: 10vw;
+	color:yellow;
+}
+
+
+/*sirens*/
+.hemisphere-container {
+	width:100vw;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+
+.hemisphere-circle {
+	width: 50%;
+	height: 100%;
+	background-color: black;
+}
+
+.hemisphere-circle img {
+	width: 100%;
+	height:100%;
+	object-fit: contain;
+	animation: rotate 1s linear infinite ;
+}
+
+@keyframes rotate {
+  0% {
+  	transform: rotate(0deg); 
+  }
+  
+  100% { 
+  	transform: rotate(360deg); 
+  }
+}
+
+
+/*Satellite*/
+.sat {
+	font-size: 8vw;
+	font-family:  Helvetica,Arial,sans-serif;
+	text-align: center;
+	background-color: yellow;
+/*	width: 100%;
+	height: 100vh;*/
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sat-1.active {
+	color:red;
+}
+
+.sat-2.active {
+	color:blue;
+}
+
+.sat-3.active {
+	color:lime;
+}
+
+.image-container {
+  height:100vh;
+  width:100vw;
+  align-items:center;
+  justify-content: center;
+  position: fixed;
+  top:0px;
+  left:0px;
+  display: none;
+  flex-wrap: wrap;
+}
+
+.rooftop-container.active {
+	display: flex;
+}
+
+.rooftop {
+	height:100vh;
+	width: 100%;
+}
+
+.rooftop img {
+	height: 100%;
+	width: 100vw;
+	width:auto;
+}
+
+/*Rose Grid*/
+.rose-pattern {
+	display: flex;
+	flex-wrap: wrap;
+	background-color: brown;
+	height: 100%;
+}
+
+.rose-image {
+	font-size: 22px;
+	padding: 3px;
+}
+
+
+	/* IP Adddress*/
+
+.ip {
+		background-color: lime;
+		height:100vh;
+		width: 100vw;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+.ip-text {
+		color: black;
+		font-size:15vw;
+		text-align: center;
+	}
+
+/*Checkers*/
+
+.checkers {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.checkers-white {
+	width:50vw;
+	height: 50vh;
+	background-color: white;
+}
+
+.checkers-lime {
+	width:50vw;
+	height: 50vh;
+	background-color: lime;
+}
+
+/*checkers-type*/
+
+.checkers-type {
+	width:100vw;
+	height:100vh;
+	display:flex;
+	flex-wrap:wrap;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	left: 0px;
+	top: 0px;
+
+
+}
+
+.checkers-text {
+	font-size: 30vw;
+	color:blue;
+	border:22px solid blue;
+	padding:2vw;
+	border-radius: 5vw;
+}
+
+
+/* Cloud Patterm */
+
+.cloud-pattern {
+	display: flex;
+	flex-wrap: wrap;
+	background-image: linear-gradient(lime, white, magenta)
+
+}
+
+.cloud-circle {
+	width: 25vw;
+	height: 25vw;
+	background-image: linear-gradient(magenta, white, lime);
+	border-radius: 50%;
+}
+
+/*Chip*/
+
+.chip-container {
+	width:100vw;
+	height: 100vh;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+
+}
+
+.chip {
+	width:60vh;
+	height:60vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 5vh;
+	border: 2px solid gray;
+}
+
+.text {
+	font-size: 10vw;
+	color:gray;
+
+}
+
+/*city*/
+.city {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.city-left {
+	width: 50%;
+	height: 100vh;
+	background-color: navy;
+}
+
+.city-right {
+	width: 50%;
+	height: 100vh;
+	background-color: lime;
+	font: 10vw;
+	overflow: hidden;
+	font-family: arial;
+}
+
+
+
+/*traffic lights*/
+
+.lights {
+    width: 100%;
+    height: 100%;
+    animation: traffic 6s infinite;
+    background-color: blue;
+}
+
+@keyframes traffic {
+    0% { 
+    	background-color: green;
+    }
+    50% {
+    	background-color: orange;
+    }
+    100% {
+    	background-color: red;
+    }
+}
+
+
+/*review your stay*/
+.review {
+  display: flex;
+  flex-wrap:wrap;
+  font-family:  Helvetica,Arial,sans-serif;
+  font-size:5vw;
+}
+
+.review-red {
+  width: 50%;
+  height: 50vh;
+  background-color: yellow;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  border-radius:50%;
+}
+
+.review-blue {
+  width: 50%;
+  height: 50vh;
+  background-color: blue;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.review-green {
+  width: 50%;
+  height: 50vh;
+  background-color: lime;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.review-black {
+  width: 50%;
+  height: 50vh;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: red;
+}
+
+/*barcode*/
+.barcode {
+	width:100%;
+	height:100vh;
+	background-color: #000;
+}
+
+.barcode img {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	background-color: #000;
+}
+
+.entertain {
+	position: absolute;
+	top:0px;
+	left:0px;
+	display: flex;
+	width:100%;
+	height: 100vh;
+	align-items: center;
+	justify-content: center;
+}
+
+.entertain-text {
+	font-size: 12vw;
+	color:lightblue;
+	text-align: center;
+  	mix-blend-mode:exclusion;
+}
+
+/*404 error code*/
+
+.errorcode{
+
+}
+
+

@@ -1,0 +1,149 @@
+body {
+	font-family: courier;
+	font-size: 22px;
+	color:red;
+	background-color: black;
+	text-align: center;
+}
+
+a {
+	color:lime;
+    text-decoration: none;
+}
+
+
+a:hover {
+    color:red;
+    opacity: 1;
+    transition: all 1s;
+}
+
+p {
+	color:red;
+	font-family: times;
+	font-size: 22px;
+	text-align: center;
+	transition: all 1s;
+	text-decoration: none;
+	opacity: 0.9;
+}
+
+p:hover {
+	color:white;
+	opacity: 1;
+	transition: all 1s;
+}
+
+
+.title {
+	color:yellow;
+	font-size: 60px;
+	font-family: arial black;
+	font-style: italic;
+	position: relative;
+	text-align: center;
+	padding: 3px;
+/*	text-shadow: 0 0 1em red;
+*/    text-decoration: none;
+
+}
+
+.textbox {
+    width: 80%;
+    background-color: yellow;
+    padding: 10px;
+    box-shadow:1px 1px 3px yellow;
+    margin: 0 auto;
+}
+
+
+.wide {
+	width:100%;
+}
+
+.wide img {
+	width:100%;
+}
+
+
+.urban {
+	width: 300px;
+    border: 10px solid lime;
+    padding: 10px;
+    margin: 10px;
+    text-align: left;
+    position: fixed;
+    left:5px;
+    bottom: 5px;
+    background-color: yellow;
+    font-size: 12px;
+    opacity: 0;
+}
+
+.urban:hover {
+opacity: 100;
+
+}
+
+#om {
+    right: 20px;
+    top:20px;
+    font-size: 100px;
+    color:lime;
+}
+
+.box {
+    width: 300px;
+    border: 25px solid red;
+    padding: 25px;
+    margin: 25px;
+    text-align: center;
+    position: fixed;
+    right:0px;
+    bottom: 0px;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+ }
+
+.button-future {
+   width: 20vw;
+    height: 20vw;
+    background-image: linear-gradient(white, lime, blue);
+    border-radius: 50%;
+}
+
+.button-future:hover {
+    width: 30vw;
+    height:22vw;
+    transition: all 0.1s;
+}
+
+.button-geoflag {
+    width: 20vw;
+    height: 20vw;
+    background-image: linear-gradient(lime, blue, magenta);
+    border-radius: 50%;
+}
+
+.button-geoflag:hover{
+    width: 22vw;
+    height: 30vw;
+    transition: all 0.1s;
+}
+
+.button-local {
+    width: 20vw;
+    height: 20vw;
+    background-image: linear-gradient(lime, blue, magenta);
+    border-radius: 50%;
+}
+
+.button-local:hover{
+    width: 22vw;
+    height: 30vw;
+    transition: all 0.1s;
+}

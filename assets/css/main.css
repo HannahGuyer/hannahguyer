@@ -1,149 +1,89 @@
-body {
-	font-family: courier;
-	font-size: 22px;
-	color:red;
-	background-color: black;
-	text-align: center;
+ body {
+	font-family: arial;
+	font-size: 24px;
+	background-image: url(background.img);
+	background-color: lime;
+	color:white;
 }
 
 a {
-	color:lime;
-    text-decoration: none;
-}
-
-
-a:hover {
-    color:red;
-    opacity: 1;
-    transition: all 1s;
-}
-
-p {
 	color:red;
-	font-family: times;
-	font-size: 22px;
-	text-align: center;
-	transition: all 1s;
 	text-decoration: none;
-	opacity: 0.9;
 }
 
-p:hover {
+.header {
+	font-size: 52px;
+	font-family: arial;
+	padding:20px;
+}
+
+.header:hover {
 	color:white;
-	opacity: 1;
-	transition: all 1s;
+	transition: .2s ease-in-out;
+	cursor: help;
+}
+
+.nav {
+	width: 100%;
+	padding: 10px;
+	position: fixed;
+	top: 0px;
+	left: 0px;
 }
 
 
-.title {
-	color:yellow;
-	font-size: 60px;
-	font-family: arial black;
-	font-style: italic;
-	position: relative;
-	text-align: center;
-	padding: 3px;
-/*	text-shadow: 0 0 1em red;
-*/    text-decoration: none;
-
-}
-
-.textbox {
-    width: 80%;
-    background-color: yellow;
-    padding: 10px;
-    box-shadow:1px 1px 3px yellow;
-    margin: 0 auto;
+.nav-item {
+	display: inline-block;
+	padding: 5px;
+	border-radius: 1px;
+	text-decoration: none;
 }
 
 
-.wide {
+.nav-item:hover {
+	color: red;
+	transition: 0.25s;
+}
+
+.nav-header {
+	display: inline;
+	color: white;
+	padding:5px;
+}
+
+
+.intro {
+	margin-top: 80px;
+	padding: 10px;
+}
+
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 10px;
+}
+
+.thumbnail {
+	flex: 0 0 33.33%;
+}
+
+.thumbnail-content {
+	padding: 10px;
+	
+}
+
+.thumbnail img {
 	width:100%;
+	-webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  	filter: grayscale(100%); /* FF 35+ */
 }
 
-.wide img {
-	width:100%;
+.thumbnail img:hover {
+	 transition: filter .2s ease-in-out;
+  -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+  filter: grayscale(0%); /* FF 35+ */
 }
 
-
-.urban {
-	width: 300px;
-    border: 10px solid lime;
-    padding: 10px;
-    margin: 10px;
-    text-align: left;
-    position: fixed;
-    left:5px;
-    bottom: 5px;
-    background-color: yellow;
-    font-size: 12px;
-    opacity: 0;
-}
-
-.urban:hover {
-opacity: 100;
-
-}
-
-#om {
-    right: 20px;
-    top:20px;
-    font-size: 100px;
-    color:lime;
-}
-
-.box {
-    width: 300px;
-    border: 25px solid red;
-    padding: 25px;
-    margin: 25px;
-    text-align: center;
-    position: fixed;
-    right:0px;
-    bottom: 0px;
-}
-
-.buttons {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
- }
-
-.button-future {
-   width: 20vw;
-    height: 20vw;
-    background-image: linear-gradient(white, lime, blue);
-    border-radius: 50%;
-}
-
-.button-future:hover {
-    width: 30vw;
-    height:22vw;
-    transition: all 0.1s;
-}
-
-.button-geoflag {
-    width: 20vw;
-    height: 20vw;
-    background-image: linear-gradient(lime, blue, magenta);
-    border-radius: 50%;
-}
-
-.button-geoflag:hover{
-    width: 22vw;
-    height: 30vw;
-    transition: all 0.1s;
-}
-
-.button-local {
-    width: 20vw;
-    height: 20vw;
-    background-image: linear-gradient(lime, blue, magenta);
-    border-radius: 50%;
-}
-
-.button-local:hover{
-    width: 22vw;
-    height: 30vw;
-    transition: all 0.1s;
+.rotate {
+	transform: rotate(45deg);
 }
