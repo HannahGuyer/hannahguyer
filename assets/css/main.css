@@ -31,7 +31,10 @@ a {
 	left: 0px;
 }
 
-
+.about {
+	background-color: red;
+	border-radius: 5px;
+}
 .nav-item {
 	display: inline-block;
 	padding: 5px;
@@ -43,12 +46,14 @@ a {
 .nav-item:hover {
 	color: red;
 	transition: 0.25s;
+	cursor: crosshair;
 }
 
 .nav-header {
 	display: inline;
 	color: white;
 	padding:5px;
+
 }
 
 
