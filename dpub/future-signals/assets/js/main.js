@@ -20,7 +20,7 @@ $(document) .ready(function(){
 
 // button filters
 
-	$('.btn-biotech)').click(function(){
+	$('.btn-biotech').click(function(){
 		hideAll();
 		$('.biotech').removeClass('hide');
 	});
@@ -35,6 +35,10 @@ $(document) .ready(function(){
 		$('.id').removeClass('hide');
 	});
 
+	$('.btn-security').click(function(){
+		hideAll();
+		$('.security').removeClass('hide');
+	});
 // button all
 
 	$('.btn-all').click(function(){

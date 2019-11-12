@@ -6,7 +6,15 @@ body {
 	color:white;
 }
 
-a {text-decoration: none;
+a {
+	text-decoration: none;
+	color: lime;
+}
+
+a:hover {
+	background-color: yellow;
+	border-radius: 5px;
+	padding: 2px;
 }
 
 /*	Index Homepage 	*/
@@ -20,11 +28,10 @@ a {text-decoration: none;
 }
 
 .index-intro {
-	font-size:28px;
-	margin-bottom:25vh; 
+	font-size:58px;
+	margin-bottom:1vh; 
 	padding: 20px;
 	text-align: center;
-	text-decoration: underline;
 	font-family: helvetica;
 	color:white;
 }
@@ -164,19 +171,19 @@ a {text-decoration: none;
 }
 
 
-/* Cloud Patterm */
+/* Metro window */
 
 .cloud-pattern {
 	display: flex;
 	flex-wrap: wrap;
-	background-image: linear-gradient(lime, white, magenta)
+	background-image: linear-gradient(#5DBCD2, white, #5DBCD2)
 
 }
 
 .cloud-circle {
-	width: 25vw;
+	width: 24vw;
 	height: 25vw;
-	background-image: linear-gradient(magenta, white, lime);
+	background-image: linear-gradient(#5DBCD2, white, #5DBCD2);
 	border-radius: 50%;
 }
 
@@ -488,6 +495,7 @@ a {text-decoration: none;
 
 .search {
   padding-top: 75px;
+  background-color: grey;
 }
 
 .search-container{
@@ -502,7 +510,7 @@ input#search-bar{
   height: 45px;
   padding: 0 20px;
   font-size: 1rem;
-  border: 1px solid #D0CFCE;
+  border: 3px solid blue;
   outline: none;
   &:focus{
     border: 1px solid #008ABF;
@@ -529,7 +537,7 @@ input#search-bar{
   width: 75px;
   height: 75px;
   top: -62px;
-  right: -45px;
+  right: -15px;
 }
 
 
