@@ -19,6 +19,15 @@ a:hover {
 
 /*	Index Homepage 	*/
 
+.drag-image {
+	width: 300px;
+  	cursor: move;
+}
+
+.flaggif {
+	left: 614px;
+    top: -1134px;
+}
 
 .index-container {
 	width: 100vw;
@@ -29,12 +38,56 @@ a:hover {
 
 .index-intro {
 	font-size:58px;
-	margin-bottom:1vh; 
+	margin-bottom:10vh; 
 	padding: 20px;
 	text-align: center;
 	font-family: helvetica;
-	color:white;
+	color:yellow;
+	position:fixed;
+	margin-left: 47vw;
+	background-color: black;
+	border: 3px white solid;
 }
+
+.index-intro:hover {
+	color:lime;
+	-webkit-animation: rotation 2s infinite linear;}
+	@-webkit-keyframes rotation
+	 {
+		from { -webkit-transform: rotate(0deg);}
+		to {-webkit-transform: rotate(359deg);}
+	}
+}
+
+.index-table {
+	margin-top: 15vh;
+}
+
+
+.title-row {
+	display: flex;
+	flex-wrap: wrap;
+	padding:10px;
+	margin-bottom: 5px;
+	margin-top: 30px;
+	color:white;
+	font-family: helvetica;
+	-webkit-transform:scale(2,1);
+	margin-left: 20px;
+}
+
+.title-name {
+	flex: 0 0 33.33%;
+}
+
+.title-layer {
+	flex: 0 0 33.33%;
+}
+
+.title-tag {
+	flex: 0 0 33.33%;
+}
+
 
 .index-row {
 	display: flex;
@@ -71,6 +124,7 @@ a:hover {
 	font-size: 50px;
 	font-family: arial;
 }
+
 
 .error {
 	text-align: center;
@@ -463,6 +517,11 @@ a:hover {
   border-radius:50%;
 }
 
+.review-red:hover {
+	cursor: wait;
+
+}
+
 .review-blue {
   width: 50%;
   height: 50vh;
@@ -470,6 +529,12 @@ a:hover {
   display:flex;
   align-items:center;
   justify-content:center;
+}
+
+.review-blue:hover {
+	font-size: .1px;
+	transition-duration: 3s;
+
 }
 
 .review-green {
@@ -481,6 +546,10 @@ a:hover {
   justify-content:center;
 }
 
+.review-green:hover {
+	font-size: 100vh;
+	transition-duration: 1s;
+}
 .review-black {
   width: 50%;
   height: 50vh;
@@ -491,6 +560,9 @@ a:hover {
   color: red;
 }
 
+.review-black:hover {
+	cursor: not-allowed;
+}
 /*searchbar */
 
 .search {

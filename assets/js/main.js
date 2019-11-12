@@ -47,3 +47,11 @@ $(document) .ready(function(){
 	});
 
 });
+
+// pop ups
+$('.revolver').click(function() {
+  $('.popup-revolver').addClass('popup-show');
+  $('.popup-revolver').click(function(){
+    $(this).removeClass('popup-show');
+  });
+});

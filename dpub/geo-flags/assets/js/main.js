@@ -18,3 +18,9 @@ setTimeout(function(){
 },4000);
 
 });
+
+$( document ).ready(function() {
+    
+ $( function() {
+    $( ".drag-image").draggable();
+  } );

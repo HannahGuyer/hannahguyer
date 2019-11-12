@@ -2,7 +2,6 @@
 	font-family: arial;
 	font-size: 24px;
 	background-image: url(background.img);
-	background-color: lime;
 	color:white;
 }
 
@@ -11,6 +10,22 @@ a {
 	text-decoration: none;
 }
 
+/*open for public bit*/
+.open {
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 8px;
+    font-size: 14px;
+    padding-top: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: blue;
+    font-style: italic;
+}
+
+/*header */
 .header {
 	font-size: 52px;
 	font-family: arial;
@@ -31,7 +46,7 @@ a {
 	left: 0px;
 }
 
-.about {
+.question {
 	background-color: red;
 	border-radius: 5px;
 }
@@ -56,10 +71,33 @@ a {
 
 }
 
+/*popups*/
 
+.popup {
+  background-color: blue;
+  color:black;
+  width:40vw;
+  height:200px;
+  font-size:16px;
+  /*position:fixed;*/
+  top:100px;
+  left:400px;
+  display:none;
+  cursor:pointer;
+  padding: 10px;
+}
+
+
+.popup-show {
+  display:block;
+}
+
+
+/*intro*/
 .intro {
 	margin-top: 80px;
 	padding: 10px;
+	margin-left: 20px; 
 }
 
 .grid {
@@ -74,6 +112,7 @@ a {
 
 .thumbnail-content {
 	padding: 10px;
+	cursor: pointer;
 	
 }
 
@@ -91,4 +130,13 @@ a {
 
 .rotate {
 	transform: rotate(45deg);
+}
+
+.about {
+	padding: 10px;
+	background-color: black;
+/*	width: 80vw;*/	
+    margin: 20px auto;
+    max-width: 70vw;
+    padding: 28px 38px;
 }
