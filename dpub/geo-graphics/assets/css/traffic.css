@@ -1,0 +1,28 @@
+
+
+
+    body { 
+      background-color: black;
+      -webkit-animation: colorchange 5s; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: green;}
+      25%  {background: green;}
+      30%  {background:orange;}
+      50%  {background: orange;}
+      75%  {background: red;}
+      100% {background: red;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+
+  

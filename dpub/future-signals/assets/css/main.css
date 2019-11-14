@@ -59,13 +59,14 @@ h2 {
 
 
 .title img {
-	width: 102%;
+	width: 100%;
 }
 
 
 .research {
 	display: flex;
 	flex-wrap: wrap;
+	width: 100vw;
 }
 
 

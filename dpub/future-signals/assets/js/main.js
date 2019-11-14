@@ -32,7 +32,7 @@ $(document) .ready(function(){
 
 	$('.btn-id').click(function(){
 		hideAll();
-		$('.id').removeClass('hide');
+		$('.identity').removeClass('hide');
 	});
 
 	$('.btn-security').click(function(){
@@ -40,9 +40,9 @@ $(document) .ready(function(){
 		$('.security').removeClass('hide');
 	});
 
-	$('.btn-blackmirror').click(function(){
+	$('.btn-hope').click(function(){
 		hideAll();
-		$('.blackmirror').removeClass('hide');
+		$('.hope').removeClass('hide');
 	});
 
 	$('.btn-origins').click(function(){
@@ -55,6 +55,10 @@ $(document) .ready(function(){
 		$('.crime').removeClass('hide');
 	});
 
+	$('.btn-censor').click(function(){
+		hideAll();
+		$('.censor').removeClass('hide');
+	});
 // button all
 
 	$('.btn-all').click(function(){

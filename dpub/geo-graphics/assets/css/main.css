@@ -19,13 +19,14 @@ a:hover {
 
 /*	Index Homepage 	*/
 
-.drag-image {
-	width: 300px;
-  	cursor: move;
-}
 
 .flaggif {
 	left: 614px;
+    top: -1134px;
+}
+
+.flaggif2 {
+	right: 614px;
     top: -1134px;
 }
 
@@ -44,9 +45,10 @@ a:hover {
 	font-family: helvetica;
 	color:yellow;
 	position:fixed;
-	margin-left: 47vw;
+	margin-left: 46vw;
 	background-color: black;
 	border: 3px white solid;
+	z-index: 99999;
 }
 
 .index-intro:hover {
@@ -63,29 +65,15 @@ a:hover {
 	margin-top: 15vh;
 }
 
-
-.title-row {
-	display: flex;
-	flex-wrap: wrap;
+.title-test {
 	padding:10px;
 	margin-bottom: 5px;
 	margin-top: 30px;
 	color:white;
 	font-family: helvetica;
 	-webkit-transform:scale(2,1);
-	margin-left: 20px;
-}
-
-.title-name {
-	flex: 0 0 33.33%;
-}
-
-.title-layer {
-	flex: 0 0 33.33%;
-}
-
-.title-tag {
-	flex: 0 0 33.33%;
+	margin-left: 35vw;
+	width: auto;
 }
 
 
@@ -534,26 +522,7 @@ span:nth-child(4) {
 
 
 
-/*traffic lights*/
 
-.lights {
-    width: 100%;
-    height: 100%;
-    animation: traffic 6s infinite;
-    background-color: blue;
-}
-
-@keyframes traffic {
-    0% { 
-    	background-color: green;
-    }
-    50% {
-    	background-color: orange;
-    }
-    100% {
-    	background-color: red;
-    }
-}
 
 
 /*review your stay*/
@@ -620,54 +589,4 @@ span:nth-child(4) {
 .review-black:hover {
 	cursor: not-allowed;
 }
-/*searchbar */
-
-.search {
-  padding-top: 75px;
-  background-color: grey;
-}
-
-.search-container{
-  width: 490px;
-  display: block;
-  margin: 0 auto;
-}
-
-input#search-bar{
-  margin: 0 auto;
-  width: 100%;
-  height: 45px;
-  padding: 0 20px;
-  font-size: 1rem;
-  border: 3px solid blue;
-  outline: none;
-  &:focus{
-    border: 1px solid #008ABF;
-    transition: 0.35s ease;
-    color: #008ABF;
-    &::-webkit-input-placeholder{
-      transition: opacity 0.45s ease; 
-  	  opacity: 0;
-     }
-    &::-moz-placeholder {
-      transition: opacity 0.45s ease; 
-  	  opacity: 0;
-     }
-    &:-ms-placeholder {
-     transition: opacity 0.45s ease; 
-  	 opacity: 0;
-     }    
-   }
- }
-
-.search-icon{
-  position: relative;
-  float: right;
-  width: 75px;
-  height: 75px;
-  top: -62px;
-  right: -15px;
-}
-
-
 
