@@ -1,0 +1,31 @@
+body {
+  background-color: black;
+}
+.ad1 {
+  margin-left: 30px;
+  color: pink;
+}
+  
+.ad2 {
+  margin-left: 90px;
+  color: blue;
+}
+
+.ad3 {
+  margin-left: 90px;
+  color: yellow;
+}
+
+.rotate {
+  height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.rotate-text {
+  transform: rotate(45deg);
+  transform-origin:bottom left;
+  font-family: Helvetica,Arial,sans-serif;
+  font-size:28vh;
+}

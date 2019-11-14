@@ -3,7 +3,7 @@
 
     body { 
       background-color: black;
-      -webkit-animation: colorchange 5s; /* Chrome and Safari */
+      -webkit-animation: colorchange 5s infinite linear; /* Chrome and Safari */
     }
 
     @keyframes colorchange

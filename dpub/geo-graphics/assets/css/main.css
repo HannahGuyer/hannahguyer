@@ -65,6 +65,24 @@ a:hover {
 	margin-top: 15vh;
 }
 
+.title-row {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+
+
+.title-name {
+	flex: 0 0 33.33%;
+}
+
+.title-layer {
+	flex: 0 0 33.33%;
+}
+
+.title-tag {
+	flex: 0 0 33.33%;
+}
 .title-test {
 	padding:10px;
 	margin-bottom: 5px;
