@@ -39,6 +39,22 @@ $(document) .ready(function(){
 		hideAll();
 		$('.security').removeClass('hide');
 	});
+
+	$('.btn-blackmirror').click(function(){
+		hideAll();
+		$('.blackmirror').removeClass('hide');
+	});
+
+	$('.btn-origins').click(function(){
+		hideAll();
+		$('.origins').removeClass('hide');
+	});
+
+	$('.btn-crime').click(function(){
+		hideAll();
+		$('.crime').removeClass('hide');
+	});
+
 // button all
 
 	$('.btn-all').click(function(){
@@ -46,3 +62,17 @@ $(document) .ready(function(){
 	});
 
 });
+
+$( ".title-1" ).click(function() {
+  $( ".toggle-1" ).slideToggle( "slow" );
+});
+
+
+// pop ups
+$('.revolver').click(function() {
+  $('.popup-revolver').addClass('popup-show');
+  $('.popup-revolver').click(function(){
+    $(this).removeClass('popup-show');
+  });
+});
+

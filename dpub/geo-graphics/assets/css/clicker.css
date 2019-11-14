@@ -1,0 +1,35 @@
+
+body {
+	font-family: Helvetica,Arial,sans-serif;
+	font-size: 32px;
+	background-color: black;
+	color:white;
+}
+
+a {
+	text-decoration: none;
+	color: lime;
+}
+
+a:hover {
+	background-color: yellow;
+	border-radius: 5px;
+	padding: 2px;
+}
+
+/*clicker*/
+.clicker {
+  margin: 100px auto;
+  text-align: center;
+}
+
+button {
+  padding: 20px;
+  background: transparent;
+  text-shadow: 1px 1px 1px #202020;
+  font-family: "Lato", sans-serif;
+  font-size: 18pt;
+  border: 1px solid lightblue;
+  color: lightblue;
+}
+
