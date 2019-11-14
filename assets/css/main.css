@@ -10,9 +10,20 @@ a {
 	text-decoration: none;
 }
 
+h1 {
+  font-style: italic;
+  font-size: 18px;
+  padding: 2px;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 18px;
+  color: white;
+}
 /*open for public bit*/
 .open {
-	padding-left: 10px;
+	 padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 8px;
     font-size: 14px;
@@ -23,6 +34,7 @@ a {
     left: 10px;
     background-color: blue;
     font-style: italic;
+    z-index: 99999;
 }
 
 /*header */
@@ -85,6 +97,7 @@ a {
   transition: opacity 500ms;
   visibility: hidden;
   opacity: 0;
+  z-index: 99999;
 }
 .overlay:target {
   visibility: visible;
@@ -101,6 +114,7 @@ a {
   position: relative;
   transition: all 5s ease-in-out;
   color: white;
+  z-index: 99999;
 }
 
 .popup h2 {
